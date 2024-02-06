@@ -1,15 +1,43 @@
+/* Primary and Secondary Colors */
+:root {
+    --primary-color: #4A2E19; /* Rich earthy brown */
+    --secondary-color: #C48F65; /* Ground red */
+    --text-color: #3D3D3D; /* Dark shade for text */
+    --background-color: #F1EDE9; /* Lighter shade for background */
+}
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    color: var(--text-color);
+    background-color: var(--background-color);
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
 }
 
 header {
-    background: #333;
-    color: white;
+    background-color: var(--primary-color);
     padding: 10px 0;
+    background-image: url('/static/images/header.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 300px; /* Adjust height as needed */
+
 }
+
+header h1 {
+    color: white;
+    text-align: center;
+    line-height: 300px; /* Match the height of the header */
+    /* Additional styling for the font can go here */
+}
+
+nav ul li a {
+    color: var(--secondary-color);
+}
+
+
+
+
 
 nav ul {
     padding: 0;
@@ -25,6 +53,82 @@ nav ul li {
 nav ul li a {
     color: white;
     text-decoration: none;
+}
+
+
+/* Contact Form Styles */
+form {
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 500px;
+    margin: auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+input[type="submit"] {
+    background-color: #4A2E19;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color:#C48F65;
+}
+
+/* Flash Message Styles */
+.flashes {
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #dff0d8;
+    color: #4A2E19;
+}
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Specify font-sizes for headings, subheadings, and body text */
+h1 {
+    font-size: 36pt;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 28pt;
+    font-style: italic;
+}
+
+p, li {
+    font-size: 18pt;
 }
 
 
