@@ -15,20 +15,19 @@ body {
 }
 
 header {
-    background-color: var(--primary-color);
-    padding: 10px 0;
     background-image: url('/static/images/header.jpg');
     background-size: cover;
     background-position: center;
     height: 300px; /* Adjust height as needed */
-
 }
+
+
+
 
 header h1 {
     color: white;
     text-align: center;
-    line-height: 300px; /* Match the height of the header */
-    /* Additional styling for the font can go here */
+    line-height: 5px; 
 }
 
 nav ul li a {
@@ -40,7 +39,7 @@ nav ul li a {
 
 
 nav ul {
-    padding: 0;
+    padding: 70px;
     list-style: none;
     text-align: center;
 }
