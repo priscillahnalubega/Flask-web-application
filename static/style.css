@@ -19,6 +19,8 @@ header {
     background-size: cover;
     background-position: center;
     height: 300px; /* Adjust height as needed */
+    margin: 0;
+    padding: 0;
 }
 
 
@@ -53,6 +55,51 @@ nav ul li a {
     color: white;
     text-decoration: none;
 }
+.hero {
+    text-align: center;
+    padding: 50px;
+    background: var(--secondary-color);
+    color: white;
+}
+
+.about-section, .featured-products {
+    padding: 20px;
+    text-align: center;
+}
+
+.btn {
+    display: inline-block;
+    background: var(--primary-color);
+    color: white;
+    padding: 10px 20px;
+    margin: 10px 0;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #C48F65;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.product {
+    text-align: center;
+}
+
+.product img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+
 
 
 /* Contact Form Styles */

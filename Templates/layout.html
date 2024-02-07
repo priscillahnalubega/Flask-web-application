@@ -18,6 +18,7 @@
                     <li><a href="{{ url_for('contact') }}">Contact</a></li>
                 </ul>
             </nav>
+            
             <h1>Welcome to Our Coffee Shop</h1>
         </header>
         
@@ -35,6 +36,38 @@
           {% endif %}
         {% endwith %}
     
+        <p>Your journey into the world of premium coffee begins here.</p>
+    </div>
+    
+    <div class="about-section">
+        <h2>Discover Our Story</h2>
+        <p>
+            Nestled in the heart of the coffee belt, Plantation Brews offers an 
+            exquisite coffee experience, from the bean to the cup. We take pride 
+            in our sustainable farming practices and the rich, aromatic flavors 
+            of our coffee.
+        </p>
+        <a href="{{ url_for('about') }}" class="btn">Learn More</a>
+    </div>
+    
+    <div class="featured-products">
+        <h2>Featured Brews</h2>
+        <p>Explore our carefully crafted selection of the month.</p>
+        <div class="product-grid">
+            <div class="product">
+                <img src="{{ url_for('static', filename='images/product1.jpg') }}" alt="Product 1">
+                <h3>Signature Blend</h3>
+                <p>Our flagship coffee blend, with notes of chocolate and citrus.</p>
+            </div>
+            <div class="product">
+                <img src="{{ url_for('static', filename='images/product2.jpg') }}" alt="Product 2">
+                <h3>Single Origin: Ethiopia</h3>
+                <p>Discover the birthplace of coffee with this single-origin treat.</p>
+            </div>
+            <!-- More products as needed -->
+        </div>
+        <a href="{{ url_for('products') }}" class="btn">View All Products</a>
+    </div
         {% block content %}{% endblock %}
     
         <footer>
